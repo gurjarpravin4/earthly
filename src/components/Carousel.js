@@ -6,26 +6,52 @@ export default function Carousel(){
     const item3 = "https://static.wixstatic.com/media/11062b_cbc1493bfd2c427aab945fcb2672f8ff~mv2.jpg/v1/fill/w_1899,h_539,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_cbc1493bfd2c427aab945fcb2672f8ff~mv2.jpg"
     
     const carouselStyle = {
-        height: "25rem",
+        height: "30rem",
         width: "window.innerWidth",
+        marginTop: "7.563rem" 
     }
 
     const head1Style = {
         fontFamily: ['Poppins', 'sans-serif'],
         fontSize: "111px",
         color: "#0B4425",
-        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF"
+        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF",
+        textAlign: "left"
     }
-    const head2Style = {
+    const subHead1Style = {
         fontFamily: ['Playfair Display', 'serif'],
         fontSize: "111px",
         color: "#0B4425",
-        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF"
+        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF",
+        textAlign: "left"
+    }
+
+    const head2Style = {
+        color: "white",
+        fontFamily: 'Montserrat',
+        fontSize: "57px",
+        fontWeight: "700"
+    }
+
+    const head3Style = {
+        fontFamily: ['Poppins', 'sans-serif'],
+        fontSize: "107px",
+        color: "#FFF86B",
+        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF",
+        textAlign: "left"
+    }
+
+    const subHead3Style = {
+        fontFamily: ['Playfair Display', 'serif'],
+        fontSize: "107px",
+        color: "#FFF86B",
+        textShadow: "1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF",
+        textAlign: "left"
     }
 
     return(
         <>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
+            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false" >
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -34,9 +60,9 @@ export default function Carousel(){
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={item1} className="d-block w-100" alt="..." style={carouselStyle}/>
-                        <div className="carousel-caption d-none d-md-block">
-                            <h1 style={head1Style}>Become</h1>
-                            <h1 style={head2Style}>Sustainable</h1>
+                        <div className="carousel-caption d-none d-md-block" style={{textAlign: "left"}}>
+                            <h1 style={head1Style}>BECOME</h1>
+                            <h1 style={subHead1Style}>Sustainable</h1>
                             <button className="btn btn-lg carousel-button rounded-pill">Start Today</button>
                         </div>
                     </div>
@@ -45,15 +71,15 @@ export default function Carousel(){
                             <source src={item2} type="video/mp4" />
                         </video>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h1 style={head2Style}>Join the Revolution</h1>
+                            <h3>Make it Possible</h3>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={item3} className="d-block w-100" alt="..." style={carouselStyle}/>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h1 style={head3Style}>LIVING SUSTAINABLY</h1>
+                            <h1 style={subHead3Style}>Shouldn't be Expensive</h1>
                         </div>
                     </div>
                 </div>
@@ -67,5 +93,5 @@ export default function Carousel(){
                 </button>
             </div>
         </>
-    )
+    );
 }

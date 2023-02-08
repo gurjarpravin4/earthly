@@ -7,7 +7,7 @@ export default function Navbar(){
 
     return(
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top" >
+            <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
                         <img src="https://static.wixstatic.com/media/ead566_2c378f27d33a419d8c532250cf2f0d51~mv2.png/v1/fill/w_99,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Earthly%20Logo_edited.png" alt="Logo"  className="d-inline-block align-text-top mx-6"></img>
