@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import ProductRow from './components/ProductRow';
 import About from './components/About';
+import Glass from './components/Glass'
+
+// const bottleVideoURL = "https://video.wixstatic.com/video/11062b_9c77d10fbe6d4bdfbffe3f7ff1cabd03/720p/mp4/file.mp4";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       </div>
       <div>
         <About/>
+      </div>
+      <div>
+        <Glass/>
       </div>
     </>
   );
