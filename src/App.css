@@ -20,14 +20,15 @@
 }
 
 .product-row {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  margin: 0px;
   background-image: url("D:/Documents/Codes/internship_assign/earthly/src/images/product_row_bg.gif");
   background-color: #cccccc;
   padding: 0 22px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .product{
-  margin-top: 10px;
+  margin-top: 20px;
 }

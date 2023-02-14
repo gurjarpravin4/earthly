@@ -9,11 +9,11 @@ export default function Product(props){
         marginBottom: "10px"
     }
     const imgStyle = {
-        borderRadius: "25px"
+        borderRadius: "25px",
     }
     return(
         <>
-            <div className="product">
+            <div>
                 <img 
                     style={imgStyle}
                     src = {props.imgURL} 
