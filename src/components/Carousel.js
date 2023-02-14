@@ -8,7 +8,7 @@ export default function Carousel(){
     const carouselStyle = {
         height: "30rem",
         width: "window.innerWidth",
-        marginTop: "7.563rem" 
+        marginTop: "5.938rem" 
     }
 
     const head1Style = {
