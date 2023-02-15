@@ -51,14 +51,14 @@ export default function Carousel(){
 
     return(
         <>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false" >
+            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" >
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item active" data-bs-interval="3000">
                         <img src={item1} className="d-block w-100" alt="..." style={carouselStyle}/>
                         <div className="carousel-caption d-none d-md-block" style={{textAlign: "left"}}>
                             <h1 style={head1Style}>BECOME</h1>
@@ -66,7 +66,7 @@ export default function Carousel(){
                             <button className="btn btn-lg carousel-button rounded-pill">Start Today</button>
                         </div>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="3000">
                         <video className="d-block w-100" autoPlay loop muted style={carouselStyle}>
                             <source src={item2} type="video/mp4" />
                         </video>
